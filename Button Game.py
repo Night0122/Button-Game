@@ -9,11 +9,13 @@ def click():
     global count
     count+=1
     print(count)
-    label.config(text = "You have " + str(count))
+    label.config(text = "You have clicked " + str(count) + " times!")
+    if count == 1:
+        label.config(text = "You have clicked " + str(count) + " time!")
 
 label = Label(
     Window,
-    text="You have " + str(count),
+    text="You have clicked " + str(count) + " times!",
     font=("Comic Sans", 30)
 )
 
@@ -32,4 +34,3 @@ button = Button(Window,
     ).pack()
 
 Window.mainloop()
-
