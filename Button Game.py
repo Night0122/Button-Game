@@ -2,6 +2,7 @@ from tkinter import *
 
 Window = Tk()
 Window.title("Button Game")
+Window.geometry("600x300")
 
 count = 0
 
